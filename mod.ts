@@ -1,6 +1,6 @@
 import { createProcessor, type ProcessorOptions } from "@mdx-js/mdx";
 import { VFile } from "vfile";
-import type { Plugin } from "vinxi";
+import type { Plugin } from "vite";
 
 export const mdx = (opts?: ProcessorOptions): Plugin[] => {
   let processor: ReturnType<typeof createProcessor>;
